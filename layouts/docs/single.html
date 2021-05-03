@@ -27,6 +27,7 @@
 			<h1>{{ .Title }}</h1>
 			<p class="lead">{{ .Params.lead | safeHTML }}</p>
 			{{ partial "main/headline-hash.html" .Content }}
+      {{ template "_internal/disqus.html" . }}
 			{{ if .Site.Params.editPage -}}
 				{{ partial "main/edit-page.html" . }}
 			{{ end -}}

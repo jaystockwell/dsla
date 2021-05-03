@@ -9,6 +9,8 @@ languageCode = "en-US"
 paginate = 7
 rssLimit = 10
 
+disqusShortname = "ctil"
+
 # add redirects/headers
 [outputs]
 home = ["HTML", "RSS", "REDIRECTS", "HEADERS"]
