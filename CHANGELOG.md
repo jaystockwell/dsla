@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.4](https://github.com/h-enk/doks/compare/v0.2.3...v0.2.4) (2021-05-03)
+
+
+### Dependencies
+
+* add mermaid ([6d5ec50](https://github.com/h-enk/doks/commit/6d5ec5011c9ac2ce0b549f057421052296b652a4))
+* bump versions to latest ([769219c](https://github.com/h-enk/doks/commit/769219c451c74cc709bec8b37673e0765e871d59))
+
 ### [0.2.3](https://github.com/h-enk/doks/compare/v0.2.2...v0.2.3) (2021-04-02)
 
 
