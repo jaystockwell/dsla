@@ -1,2 +1,3 @@
-baseurl = "https://ctil.iu.edu/tla/"
+baseurl = "https://ctil.iu.edu/dsla/"
 canonifyURLs = true
+disqusShortname = "ctil"
