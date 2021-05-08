@@ -73,6 +73,8 @@ rel  = "sitemap"
 
 [taxonomies]
   contributor = "contributors"
+  tag = "tags"
+  category = "categories"
 
 [RelPermalinks]
   blog = "/blog/:title/"

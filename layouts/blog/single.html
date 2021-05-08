@@ -8,7 +8,25 @@
       </div>
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
       {{ .Content }}
+
+      <!--
+      <h3>vue test</h3>
+      {{ safeHTML `
+      <div id="app">
+        {{ message }}
+      </div>
+      ` }}
     </article>
+    <script type="module">
+      import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.esm.browser.js'
+      var app = new Vue({
+        el: '#app',
+        data: {
+          message: 'Hello Vue!'
+        }
+      })
+    </script>
+    -->
   </div>
 </div>
 {{ end }}

@@ -17,7 +17,7 @@
     "init": "rimraf .git && git init -b main",
     "create": "hugo new",
     "prestart": "npm run clean",
-    "start": "hugo server --disableFastRender -b http://localhost",
+    "dev": "hugo server --disableFastRender -b http://localhost",
     "prebuild": "npm run clean",
     "build": "hugo --gc --minify && npm run build:functions",
     "build:functions": "netlify-lambda build assets/lambda",
@@ -61,6 +61,8 @@
     "shx": "^0.3.3",
     "standard-version": "^9.2",
     "stylelint": "^13.12",
-    "stylelint-config-standard": "^21.0"
+    "stylelint-config-standard": "^21.0",
+    "@auth0/auth0-spa-js": "^1.15.0",
+    "vue": "^2.6.12"
   }
 }

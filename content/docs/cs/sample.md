@@ -9,9 +9,23 @@ images: []
 menu:
   docs:
     parent: "cs"
+contributors:
+  - Soichi Hayashi
+  - Frances E. Allen
 weight: 100
 toc: true
+plotly: true
 ---
+
+## Authors
+
+As you see on above, if you'd like to list the contributors(authors) of this page, just add something like this to the "front matter".
+
+```
+contributors:
+  - Soichi Hayashi
+  - Frances E. Allen
+```
 
 ## Images
 
@@ -21,10 +35,95 @@ To embed an image on a page, first you will need to add your image under `/stati
 ![sample image](/images/sample.gif)
 ```
 
-> You don't need `/static/` in the URL!
-
 This is how it might look..
 
 ![sample image](/images/sample.gif)
+
+Although the image is stored inside /static directory, You don't need `/static/` in the image URL. That's how hugo does thing.
+
+## Videos
+
+You can embed video by hosting it on youtube (maybe we should create UTIL channel?) and embedding it with your hugo page using youtube shortcodes like this 
+
+```
+{{</* youtube HHqv2G0LmNc */>}}
+```
+
+> `"HHqv2G0LmNc"` is the Video ID from the youtube URL
+
+becomes..
+
+{{< youtube HHqv2G0LmNc >}}
+
+You can do similar with vimeo..
+
+## Katex
+
+Use Katex syntax for math equations.
+
+```
+$$
+\begin{equation*}
+   n \sim  10^{18} \mathrm{cm^{-3}} \left(\frac{100\mathrm{km}}{R}\right)^2 \left(\frac{10\mathrm{MeV}}{\langle E \rangle}\right).
+\end{equation*}
+$$
+```
+
+Becomes..
+
+$$
+\begin{equation*}
+   n \sim  10^{18} \mathrm{cm^{-3}} \left(\frac{100\mathrm{km}}{R}\right)^2 \left(\frac{10\mathrm{MeV}}{\langle E \rangle}\right).
+\end{equation*}
+$$
+
+## Tweet
+
+You can add twitter feed like this..
+
+```
+{{</* tweet 1390858968101232642*/>}}
+```
+
+which becomes..
+
+{{< tweet 1390858968101232642 >}}
+
+## Gist
+
+If you want to host a code snippet on gist, you can include it here like this.
+
+```
+{{</* gist spf13 7896402 */>}}
+```
+
+Becomes
+
+{{< gist spf13 7896402 >}}
+
+## Plotly
+
+You can embed plotly graph like this (you can interact with it!)
+
+{{<plotly json="/plotly/sample.json" height="400px">}}
+
+This requires several steps..
+
+1. First you need to export your vis content in plotly json format (please google search!). 
+
+2. Then, you store it under /static/plotly directory.
+
+3. You have to load "plotly.js" for your page by adding the following front matter content
+
+```
+plotly: true
+```
+
+4. Lastly, you can insert the plotly shortcode like this 
+
+
+```
+{{</* plotly json="/plotly/sample.json" height="400px" */>}}
+```
 
 
