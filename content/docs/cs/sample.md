@@ -183,15 +183,20 @@ Becomes
 
 You can embed [plotly](https://plotly.com/) graph (you can interact with it!)
 
-{{<plotly json="plotly/sample.json" height="400px">}}
+```
+{{</* plotly json="plotly/sample.json" height="400px"*/>}}
+```
+> Please make the URL relative to `static` directory (without `/` at the front)
 
-> Please make the URL relative to `static` directory.
+Becomes..
+
+{{<plotly json="plotly/sample.json" height="400px">}}
 
 This requires several steps..
 
 1. First you need to export your vis content in plotly json format (please google search!). 
 
-2. Then, you store it under /static/plotly directory.
+2. Then, you store the json file under static/plotly directory.
 
 3. You have to load "plotly.js" for your page by adding the following front matter content
 
@@ -203,7 +208,7 @@ plotly: true
 
 
 ```
-{{</* plotly json="/plotly/sample.json" height="400px" */>}}
+{{</* plotly json="plotly/sample.json" height="400px" */>}}
 ```
 
 
