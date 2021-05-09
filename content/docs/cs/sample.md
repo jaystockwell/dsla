@@ -17,7 +17,7 @@ toc: true
 plotly: true
 ---
 
-## Authors
+## Contributors 
 
 As you see on above, if you'd like to list the contributors(authors) of this page, just add something like this to the "front matter".
 
@@ -40,6 +40,82 @@ This is how it might look..
 ![sample image](/images/sample.gif)
 
 Although the image is stored inside /static directory, You don't need `/static/` in the image URL. That's how hugo does thing.
+
+## Code highLight
+
+You can insert code in the usual markdown format 
+
+````
+ ```langugage
+ some code
+ ```
+````
+
+So far, we've installed the following highLight langugages
+
+* javascript
+* json
+* bash
+* html
+* ini
+* toml
+* yaml
+* md (markdown)
+* python
+* r
+* matlab
+
+We can install a lot of other languages too, so just ask me.
+
+Here is `bash` example
+
+```bash
+#!/bin/bash
+
+###### CONFIG
+ACCEPTED_HOSTS="/root/.hag_accepted.conf"
+BE_VERBOSE=false
+
+if [ "$UID" -ne 0 ]
+then
+ echo "Superuser rights required"
+ exit 2
+fi
+
+genApacheConf(){
+ echo -e "# Host ${HOME_DIR}$1/$2 :"
+}
+
+echo '"quoted"' | tr -d \" > text.txt
+```
+
+`javascript` example
+
+```javascript
+function $initHighlight(block, cls) {
+  try {
+    if (cls.search(/\bno\-highlight\b/) != -1)
+      return process(block, true, 0x0F) +
+             ` class="${cls}"`;
+  } catch (e) {
+    /* handle exception */
+  }
+  for (var i = 0 / 2; i < classes.length; i++) {
+    if (checkCondition(classes[i]) === undefined)
+      console.log('undefined');
+  }
+
+  return (
+    <div>
+      <web-component>{block}</web-component>
+    </div>
+  )
+}
+
+export  $initHighlight;
+```
+
+We can also pick different [highLight themes](https://highlightjs.org/static/demo/)
 
 ## Videos
 
@@ -103,7 +179,7 @@ Becomes
 
 ## Plotly
 
-You can embed plotly graph like this (you can interact with it!)
+You can embed [plotly](https://plotly.com/) graph (you can interact with it!)
 
 {{<plotly json="/plotly/sample.json" height="400px">}}
 
