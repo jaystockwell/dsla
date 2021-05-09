@@ -1,3 +1,4 @@
+import Vue from 'vue/dist/vue'
 
 import { Auth0Client } from '@auth0/auth0-spa-js'
 const auth0 = new Auth0Client({
@@ -6,6 +7,7 @@ const auth0 = new Auth0Client({
     cacheLocation: 'localstorage',
 });
 
+/*
 customElements.define('dsla-login', class extends HTMLElement {
     constructor() {
         super(); 
@@ -50,16 +52,10 @@ customElements.define('dsla-login', class extends HTMLElement {
         this.addEventListener('click', e=>{
             if(this.user) {
                 console.log("logging out");
-                auth0.logout({
-                    //returnTo: "http://localhost:1313",
-                });
+                auth0.logout({});
                 this.update();
             } else {
-                /*
-                auth0.loginWithRedirect({ 
-                    //redirect_uri: "http://localhost:1313", 
-                });
-                */
+                //auth0.loginWithRedirect({ //redirect_uri: "http://localhost:1313", });
                 auth0.loginWithPopup().then(()=>{
                     console.log("logged in?");
                     auth0.getUser().then(user=>{
@@ -84,7 +80,7 @@ customElements.define('dsla-login', class extends HTMLElement {
         }
     }
 });
-
+*/
 /*
 document.addEventListener('DOMContentLoaded', async ()=>{
     const user = await auth0.getUser();
@@ -97,6 +93,31 @@ document.addEventListener('DOMContentLoaded', async ()=>{
 });
 */
 
+new Vue({
+    el: '#app', //right now it's attached to partials/header/header.html
+    components: {
+        'dslaLogin': ()=>import('./vue/login'),
+    },
+    async mounted() {
+        this.user = await auth0.getUser();
+    },
+    data() {
+        return {
+            user: false,
+        }
+    },
+    methods: {
+        async login() {
+            await auth0.loginWithPopup();
+            this.user = await auth0.getUser();
+        },
+        async logout() {
+            auth0.logout();
+            this.user = null;
+        },
+
+    }
+});
 /*
 new Vue({
     el: '#app', //right now it's attached to partials/header/header.html
