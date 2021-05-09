@@ -92,3 +92,5 @@ rel  = "sitemap"
   [[module.mounts]]
     source = "node_modules/katex"
     target = "assets/js/vendor/katex"
+
+

@@ -2,4 +2,12 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 {{ end }}
 
+{{ if .Site.Params.options.vue -}}
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+{{ end }}
 
+<!--
+<script type="module">
+    import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.esm.browser.js'
+</script>
+-->

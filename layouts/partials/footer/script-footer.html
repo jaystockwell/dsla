@@ -11,7 +11,7 @@
 {{ $katexAutoRender := resources.Get "js/vendor/katex/dist/contrib/auto-render.js" -}}
 
 {{ $app := resources.Get "js/app.js" -}}
-
+{{ $app := $app | js.Build -}}
 {{ $slice := slice $app -}}
 
 {{ if .Site.Params.options.lazySizes -}}
@@ -62,6 +62,7 @@
     <script src="{{ $katex.RelPermalink }}" defer></script>
     <script src="{{ $katexAutoRender.RelPermalink }}" onload="renderMathInElement(document.body);" defer></script>
   {{ end -}}
+
   <script src="{{ $js.RelPermalink }}" defer></script>
   {{ if .Site.Params.options.flexSearch -}}
     <script src="{{ $index.RelPermalink }}" defer></script>

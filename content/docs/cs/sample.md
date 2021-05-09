@@ -27,6 +27,8 @@ contributors:
   - Frances E. Allen
 ```
 
+If you'd like.. you can add a custom profile page for each contributors. See `/content/contributors/soichi-hayashi` directory and create something similar for each contributor.
+
 ## Images
 
 To embed an image on a page, first you will need to add your image under `/static/images` directory, then add something like the following.
@@ -181,7 +183,9 @@ Becomes
 
 You can embed [plotly](https://plotly.com/) graph (you can interact with it!)
 
-{{<plotly json="/plotly/sample.json" height="400px">}}
+{{<plotly json="plotly/sample.json" height="400px">}}
+
+> Please make the URL relative to `static` directory.
 
 This requires several steps..
 

@@ -227,3 +227,7 @@ body {
 .katex {
   font-size: $font-size-md;
 }
+
+[v-cloak] {
+  display: none;
+}
