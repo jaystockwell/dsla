@@ -212,3 +212,49 @@ plotly: true
 ```
 
 
+## Citation
+
+You can add citation by doing the following.
+
+1. Add the paper you are citing in `data/citations.yml` of this repo in yml formatted bibtex. If you have bibtex file, you can use `pandoc-citeproc --bib2yaml` command to conver it to this format.
+
+The citation entry should look like this
+
+```
+- id: Lessig 2002
+  type: article-journal
+  author:
+  - family: Freely
+    given: I.P.
+  issued:
+  - year: 1997
+  title: A small paper
+  container-title: The journal of small papers
+  volume: '5'
+  note: to appear
+
+```
+
+2. Add the citation on your page by adding the following shortcode using the `id` you used for citations.yml as the key.
+
+```
+> Here is my citation {{</* cite "Lessig 2002" */>}}.
+```
+
+It would appear like the following..
+
+> Here is my citation{{< cite "Lessig 2002" >}}
+
+3. To show all the references cited in your page, add the following shortcode where you want to show the references.
+
+```
+{{</* bibliography */>}}
+```
+
+This will add all the papers that you have cited in your page. Like this..
+
+### References
+
+{{< bibliography >}}
+
+

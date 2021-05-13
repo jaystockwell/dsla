@@ -43,6 +43,8 @@ isPlainText = true
 noUgly = true
 rel  = "sitemap"
 
+#ignoreErrors = ["error-remote-getjson"]
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.extensions]

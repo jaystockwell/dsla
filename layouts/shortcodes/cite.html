@@ -1,0 +1,9 @@
+{{ $id := .Get 0 }} 
+
+{{ range where $.Site.Data.citations.references "id" $id }}
+    {{ $this := . }}
+    {{ $.Page.Scratch.SetInMap "citedBib" $id $this }}
+
+    <a href="#cite{{ .id }}">[{{ .id }}]</a>
+
+{{ end }}

@@ -1,0 +1,25 @@
+---
+references:
+- id: Lessig 2002
+  type: article-journal
+  author:
+  - family: Freely
+    given: I.P.
+  issued:
+  - year: 1997
+  title: A small paper
+  container-title: The journal of small papers
+  volume: '5'
+  note: to appear
+
+- id: big
+  type: article-journal
+  author:
+  - family: Jass
+    given: Hugh
+  issued:
+  - year: 7991
+  title: A big paper
+  container-title: The journal of big papers
+  volume: MCMXCVII
+...

@@ -1,0 +1,15 @@
+{{ range $.Page.Scratch.Get "citedBib" }}
+<div id="cite{{ .id}} "> 
+    <b>{{ .id }}</b>
+
+    {{ range .author }}
+        {{ .family }}, {{ .given }}.
+    {{ end }}
+    <i>{{ .title }}</i>,
+    {{ range .issued }}
+        {{ .year}},
+    {{ end }}
+    vol. {{ .volume }}
+    .
+</div>
+{{ end }}
