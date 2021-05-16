@@ -39,6 +39,17 @@
 
         <p class="lead">{{ .Params.lead | safeHTML }}</p>
         {{ partial "main/headline-hash.html" .Content }}
+
+        {{ if .Params.quiz -}}
+            <br>
+            <div id="vue-quiz"/>
+            <script>
+            document.addEventListener("DOMContentLoaded", function(){
+                document.initQuiz("#vue-quiz", "{{ .Params.quiz | jsonify}}"); 
+            });
+            </script>
+        {{ end -}}
+
         {{ template "_internal/disqus.html" . }}
         {{ if .Site.Params.editPage -}}
             {{ partial "main/edit-page.html" . }}

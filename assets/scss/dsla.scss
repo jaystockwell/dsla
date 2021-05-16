@@ -3,3 +3,49 @@
     cursor: pointer;
     white-space: nowrap;
 }
+
+.dsla-quiz {
+    box-shadow: 0 0 4px #0009;
+    border-radius: 5px;
+
+    .dsla-quiz-left {
+        float: left;
+        height: 100%;
+        background-color: white;
+        margin: 20px;
+        font-size: 20pt;
+    }
+    .dsla-quiz-main {
+        margin-left: 60px;
+        height: 100%;
+        background-color: #ddd;
+        padding: 10px;
+        padding-left: 20px;
+
+        small {
+            opacity: 0.7;
+            line-height: 250%;
+        }
+
+        .dsla-quiz-answer {
+            background-color: #eee;
+            margin-bottom: 1px;
+            padding: 10px;
+            opacity: 0;
+            transition: opacity 0.5s;
+
+            &:hover {
+                cursor: pointer;
+                background-color: white;
+            }
+            &.show {
+                opacity: 1;
+            }
+        }
+
+    }
+
+    .dsla-quiz-question {
+        font-weight: bold;
+    }
+}

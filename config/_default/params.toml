@@ -57,3 +57,6 @@ editPage = false
   highLight = true
   kaTex = true
 
+custom_css = ["css/custom.css"]
+custom_js = ["fontawesome-free-5.15.3-web/js/all.min.js"]
+

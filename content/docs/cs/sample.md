@@ -15,6 +15,14 @@ contributors:
 weight: 100
 toc: true
 plotly: true
+quiz:
+    question: What is the best way embed an interactive graphs/plots on your page?
+    answer: Create and store plotlyjs json under /static directory, and embed it using plotly shortcode.
+    wrong:
+      - Create and host the plot outside of this site and simply link to your page.
+      - Write and embed javascript code inside your markdown document.
+      - Create a google spreadsheet with an exported chart and embed the graph on your page.
+      - Write a python code using matplotlib and include it in your markdown and this site will automatically generate the graph for your page.
 ---
 
 ## Contributors 

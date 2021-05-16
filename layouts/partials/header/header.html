@@ -17,9 +17,12 @@
           <a class="nav-link" href="{{ .URL | relURL }}">{{ .Pre | safeHTML }}<span class="ms-2 visually-hidden">{{ .Name | safeHTML }}</span></a>
         </li>
       {{ end -}}
-      <li class="nav-item">
-          <dsla-login/>
-      </li>
+      <li class="nav-item" id="vue-login"/>
+      <script> 
+          document.addEventListener("DOMContentLoaded", function(){
+              document.initLogin("#vue-login"); 
+          });
+      </script>
     </ul>
 
     <div class="collapse navbar-collapse order-4 order-md-1">
@@ -44,9 +47,6 @@
         <div id="suggestions" class="shadow bg-white rounded"></div>
       </form>
       {{ end -}}
-      </div>
-
-  </div>
-  </div>
-  </div>
+    </div><!--collapse-->
+  </div><!--container-->
 </header>
