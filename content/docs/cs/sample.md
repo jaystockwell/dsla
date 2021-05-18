@@ -222,7 +222,7 @@ plotly: true
 
 ## Citation
 
-You can add citation by doing the following.
+You can add citation by doing the following. I think.
 
 1. Add the paper you are citing in `data/citations.yml` of this repo in yml formatted bibtex. If you have bibtex file, you can use `pandoc-citeproc --bib2yaml` command to conver it to this format.
 
