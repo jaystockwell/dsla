@@ -4,7 +4,7 @@ description: "Template for MD file front matter"
 lead: "Please use the contents of this file as the front matter for your MD files."
 keywords: markdown, md, content, front matter, template
 date: 2021-05-18T13:00:57+00:00
-lastmod: 2021-05-18T13:01:57+00:00
+lastmod: 2021-05-18T13:21:57+00:00
 contributors:
 	- Andra Ferrara
 draft: false
