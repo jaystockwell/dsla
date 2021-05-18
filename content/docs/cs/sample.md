@@ -1,9 +1,10 @@
 ---
 title: "Sample Content"
 description: "This description will be read by search engine to find this page"
-lead: "This page contains various markdown example"
+lead: "This page contains various markdown examples"
+keywords: Markdown, MD
 date: 2020-10-06T08:48:57+00:00
-lastmod: 2020-10-06T08:48:57+00:00
+lastmod: 2021-05-18T12:18:57+00:00
 draft: false
 images: []
 menu:
@@ -12,6 +13,7 @@ menu:
 contributors:
   - Soichi Hayashi
   - Frances E. Allen
+  - Andra Ferrara
 weight: 100
 toc: true
 plotly: true
