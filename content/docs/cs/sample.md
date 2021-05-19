@@ -4,9 +4,9 @@ description: "This description will be read by search engine to find this page"
 keywords:
     - data science
     - computer science
-lead: "This page contains various markdown example"
+lead: "This page contains various markdown examples"
 date: 2020-10-06T08:48:57+00:00
-lastmod: 2020-10-06T08:48:57+00:00
+lastmod: 2021-05-18T12:18:57+00:00
 draft: false
 images: []
 menu:
@@ -15,6 +15,7 @@ menu:
 contributors:
   - Soichi Hayashi
   - Frances E. Allen
+  - Andra Ferrara
 weight: 100
 toc: true
 plotly: true
@@ -225,7 +226,7 @@ plotly: true
 
 ## Citation
 
-You can add citation by doing the following.
+You can add citation by doing the following. I think.
 
 1. Add the paper you are citing in `data/citations.yml` of this repo in yml formatted bibtex. If you have bibtex file, you can use `pandoc-citeproc --bib2yaml` command to conver it to this format.
 
