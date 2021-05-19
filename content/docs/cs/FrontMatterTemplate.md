@@ -11,15 +11,15 @@ lead: "Please use the contents of this file as the front matter for your MD file
 date: 2021-05-18T13:00:57+00:00
 lastmod: 2021-05-18T13:32:57+00:00
 contributors:
-	- Andra Ferrara
+    - Andra Ferrara
 draft: false
 toc: true
 plotly: false
 images: []
 weight: 100
 menu:
-	docs:
-		parent: "cs"
+    docs:
+        parent: "cs"
 ---
 
 title: "[title]"
@@ -42,9 +42,9 @@ lastmod: 2021-05-18T00:00:0+00:00 (<-- please update to current date and delete 
 
 contributors:
 
-	- [original author]
+    - [original author]
 
-	- [editor 1] (<-- delete if N/A, and delete these instructions)
+    - [editor 1] (<-- delete if N/A, and delete these instructions)
 
     - [editor 2] (<-- delete if N/A, add more if needed, and delete these instructions)
 
@@ -60,6 +60,6 @@ weight: 100
 
 menu:
 
-	docs:
+    docs:
 
-		parent: "[GitHub folder name]" (<-- change to correct folder, and delete these instructions)
+        parent: "[GitHub folder name]" (<-- change to correct folder, and delete these instructions)
