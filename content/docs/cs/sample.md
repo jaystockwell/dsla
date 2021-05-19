@@ -1,6 +1,9 @@
 ---
 title: "Sample Content"
 description: "This description will be read by search engine to find this page"
+keywords:
+    - data science
+    - computer science
 lead: "This page contains various markdown example"
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00

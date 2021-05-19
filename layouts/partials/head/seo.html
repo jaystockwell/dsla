@@ -22,6 +22,12 @@
   <meta name="description" content="{{ .Site.Params.description }}">
 {{ end -}}
 
+{{ with .Keywords -}}
+  <meta name="keywords" content="{{ delimit . ", " }}">
+{{ else -}}
+  <meta name="keywords" content="{{ .Site.Params.keywords }}">
+{{ end -}}
+
 {{ if $.Scratch.Get "paginator" }}
   <link rel="canonical" href="{{ .Paginator.URL | relURL }}">
   {{ if .Paginator.HasPrev -}}
