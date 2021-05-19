@@ -11,17 +11,17 @@ lead: "Jena is an open source tool for the semantic web"
 date: 2020-10-24T00:00:00+00:00
 lastmod: 2021-05-18T14:33:00+00:00
 contributors:
-	- Daniel Hinders
-	- Shreyans Jain
-	- Andra Ferrara
+    - Daniel Hinders
+    - Shreyans Jain
+    - Andra Ferrara
 draft: false
 toc: true
 plotly: false
 images: []
 weight: 100
 menu:
-	docs:
-		parent: "KnowledgeObjects"
+    docs:
+        parent: "KnowledgeObjects"
 ---
 
 # Apache Jena

@@ -21,7 +21,7 @@ images: []
 weight: 100
 menu:
     docs:
-	parent: "KnowledgeObjects"
+    parent: "KnowledgeObjects"
 ---
 
 # Amazon (AWS) SageMaker
