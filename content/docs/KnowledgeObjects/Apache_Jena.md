@@ -1,19 +1,19 @@
 ---
 title: "Apache Jena"
 description: "open source semantic web tool"
+lead: "Jena is an open source tool for the semantic web"
 keywords: 
     - NoSQL
     - OWL
     - RDF
     - Semantic Web
     - Triples
-lead: "Jena is an open source tool for the semantic web"
-date: 2020-10-24T00:00:00+00:00
-lastmod: 2021-05-18T14:33:00+00:00
 contributors:
     - Daniel Hinders
     - Shreyans Jain
     - Andra Ferrara
+date: 2020-10-24T00:00:00+00:00
+lastmod: 2021-05-19T14:33:00+00:00
 draft: false
 toc: true
 plotly: false
